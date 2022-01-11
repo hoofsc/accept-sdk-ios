@@ -136,12 +136,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		598953F4278D3F7D0075DD84 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A0070CD91D38AE0A008BD8D4 /* AcceptSDK */,
+				A0070CE51D38AE0A008BD8D4 /* AcceptSDKTests */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		A0070CCD1D38AE0A008BD8D4 = {
 			isa = PBXGroup;
 			children = (
 				598953E5278D2FC60075DD84 /* Package.swift */,
-				A0070CD91D38AE0A008BD8D4 /* AcceptSDK */,
-				A0070CE51D38AE0A008BD8D4 /* AcceptSDKTests */,
+				598953F4278D3F7D0075DD84 /* Sources */,
 				A0070CD81D38AE0A008BD8D4 /* Products */,
 			);
 			sourceTree = "<group>";

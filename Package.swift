@@ -15,7 +15,7 @@ let package = Package(
         targets: [
             .target(
                 name: "AcceptSDK",
-                path: "AcceptSDK",
+                path: "AcceptSDK/",
                 dependencies: [],
                 resources: [
                     .process("Info.plist")
@@ -23,7 +23,7 @@ let package = Package(
             ),
             .testTarget(
                 name: "AcceptSDKTests",
-                path: "AcceptSDKTests",
+                path: "AcceptSDKTest/s",
                 dependencies: ["AcceptSDK"],
                 resources: [
                     .process("Info.plist")
