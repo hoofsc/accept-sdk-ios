@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "AcceptSDK",
+    url: "https://github.com/hoofsc/accept-sdk-ios",
     platforms: [.iOS(.v10)],
     products: [
         .library(
@@ -14,11 +15,19 @@ let package = Package(
         targets: [
             .target(
                 name: "AcceptSDK",
-                dependencies: []
+                path: "AcceptSDK",
+                dependencies: [],
+                resources: [
+                    .process("Info.plist")
+                ]
             ),
             .testTarget(
                 name: "AcceptSDKTests",
-                dependencies: ["AcceptSDK"]
+                path: "AcceptSDKTests",
+                dependencies: ["AcceptSDK"],
+                resources: [
+                    .process("Info.plist")
+                ]
             )
         ]
     ]
