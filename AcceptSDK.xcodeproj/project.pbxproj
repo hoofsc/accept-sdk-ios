@@ -91,6 +91,7 @@
 		05F5BE570E61E8AD84559E8B /* Pods-AcceptSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcceptSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AcceptSDKTests/Pods-AcceptSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2586DA0885DBC49194787873 /* Pods-AcceptSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcceptSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AcceptSDK/Pods-AcceptSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		2AB9615B0C6A7A92478FEB19 /* Pods_AcceptSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AcceptSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		598953E5278D2FC60075DD84 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8DCBB2BA1D3F6C4C00E6FDDA /* WebCheckOutDataTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebCheckOutDataTypeTests.swift; sourceTree = "<group>"; };
 		8DCBB2BC1D3F8BD700E6FDDA /* FingerPrintTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FingerPrintTests.swift; sourceTree = "<group>"; };
 		8DCBB2BE1D3FAF5500E6FDDA /* MerchantAuthenticationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantAuthenticationTests.swift; sourceTree = "<group>"; };
@@ -165,11 +166,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A0070CCD1D38AE0A008BD8D4 = {
+		598953E3278D2F9F0075DD84 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				A0070CD91D38AE0A008BD8D4 /* AcceptSDK */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		598953E4278D2FB00075DD84 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
 				A0070CE51D38AE0A008BD8D4 /* AcceptSDKTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A0070CCD1D38AE0A008BD8D4 = {
+			isa = PBXGroup;
+			children = (
+				598953E5278D2FC60075DD84 /* Package.swift */,
+				598953E3278D2F9F0075DD84 /* Sources */,
+				598953E4278D2FB00075DD84 /* Tests */,
 				A0070CD81D38AE0A008BD8D4 /* Products */,
 				3A1E0CA05EFA9E997BEE45EA /* Pods */,
 				03A069330F464E53C167FD61 /* Frameworks */,
