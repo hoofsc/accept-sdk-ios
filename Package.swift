@@ -4,31 +4,30 @@ import PackageDescription
 
 let package = Package(
     name: "AcceptSDK",
-    url: "https://github.com/hoofsc/accept-sdk-ios",
     platforms: [.iOS(.v10)],
     products: [
         .library(
             name: "AcceptSDK",
             targets: ["AcceptSDK"]
         ),
-        dependencies: [],
-        targets: [
-            .target(
-                name: "AcceptSDK",
-                path: "AcceptSDK/",
-                dependencies: [],
-                resources: [
-                    .process("Info.plist")
-                ]
-            ),
-            .testTarget(
-                name: "AcceptSDKTests",
-                path: "AcceptSDKTest/s",
-                dependencies: ["AcceptSDK"],
-                resources: [
-                    .process("Info.plist")
-                ]
-            )
-        ]
+    ],
+    dependencies: [],
+    targets: [
+        .target(
+            name: "AcceptSDK",
+            dependencies: [],
+            path: "Sources/AcceptSDK/",
+            resources: [
+                .process("Info.plist")
+            ]
+        ),
+        .testTarget(
+            name: "AcceptSDKTests",
+            dependencies: ["AcceptSDK"],
+            path: "Sources/AcceptSDKTests/",
+            resources: [
+                .process("Info.plist")
+            ]
+        )
     ]
 )
